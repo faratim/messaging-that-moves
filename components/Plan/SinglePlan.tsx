@@ -1,11 +1,11 @@
 import { Feature } from "@/types/feature";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
+const SinglePlan = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph } = feature;
   return (
     <div className="w-full">
-      <div className="wow fadeInUp flex" data-wow-delay=".15s">
-        <div className="mb-10 flex h-[70px] w-[70px] flex-shrink-0 items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+      <div className="wow fadeInUp text-center" data-wow-delay=".15s">
+        <div className="mx-auto mb-2 flex h-[70px] w-[70px] flex-shrink-0 items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
           {icon}
         </div>
         <div className="ml-5">
@@ -21,4 +21,4 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   );
 };
 
-export default SingleFeature;
+export default SinglePlan;

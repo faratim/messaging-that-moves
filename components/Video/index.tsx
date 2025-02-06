@@ -13,8 +13,8 @@ const Video = () => {
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="We're Here to Help You Shine"
+          paragraph="We know how it feels to be ignored and overlooked. Your message deserves to be heard."
           center
           mb="80px"
         />
@@ -27,7 +27,9 @@ const Video = () => {
             >
               <div className="relative aspect-[77/40] items-center justify-center">
                 <Image src="/images/video/video.jpg" alt="video image" fill />
-                <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
+
+                {/* Video Play button */}
+                {/* <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
                     onClick={() => setOpen(true)}
@@ -42,21 +44,42 @@ const Video = () => {
                       <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
                     </svg>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
+
+        <div className="mt-16 flex w-full">
+          <div className="text-center">
+            <h3 className="mb-1 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+              15 Years of Experience
+            </h3>
+            <p className="text-base font-normal leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+              Helping businesses craft impactful messages that move people to
+              action.
+            </p>
+
+            <h3 className="mb-1 mt-12 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+              Full Service Solution
+            </h3>
+            <p className="text-base font-normal leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+              Great messaging doesn&apos;t sell your products. Customers{" "}
+              <em>hearing</em> your message does. Once your messaging is
+              crafted, we help you get it in front of the right people.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         autoplay={true}
         start={true}
         isOpen={isOpen}
         videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
-      />
+      /> */}
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
     </section>
