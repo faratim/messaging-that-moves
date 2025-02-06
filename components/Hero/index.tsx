@@ -16,17 +16,21 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-5xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-6xl md:leading-tight">
-                  Clarify Your Message, Inspire Action
+                  <span className="block">Know Exactly</span>
+                  <span className="block">What to Say</span>
                 </h1>
-                <p className="mb-12 text-xl !leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl md:text-2xl">
+                {/* <p className="mb-4 text-xl !leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl md:text-2xl">
                   Struggling to communicate your value effectively?
+                </p> */}
+                <p className="mb-12 text-xl !leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl md:text-2xl">
+                  Stop missing out because of ineffective messaging.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
                     className="rounded-full bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Schedule a Call
+                    Schedule Your Free Call
                   </Link>
                   {/* <Link
                     href="https://github.com/NextJSTemplates/startup-nextjs"

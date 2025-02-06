@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import Link from "next/link";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -30,21 +31,33 @@ const AboutSectionOne = () => {
                 center={true}
               />
 
-              <div className="wow fadeInUp mb-12 lg:mb-0" data-wow-delay=".15s">
+              <div
+                className="wow fadeInUp mb-12 mt-16 lg:mb-0"
+                data-wow-delay=".15s"
+              >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Frustration grows with each missed opportunity." />
-                    <List text="Lack of clarity creates lost revenue opportunities." />
-                    <List text="Potential customers remain uninterested." />
-                    <List text="Your competition outshines your message." />
+                    <List text="Missing out on sales because customers lose interest." />
+                    <List text="Feeling ignored because potential clients won't return your emails." />
+                    <List text="Giving presentations that don't produce move people to action." />
                   </div>
 
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Ideas crucial for growth are overlooked." />
-                    <List text="Missed growth opportunities." />
-                    <List text="Value of your offerings goes unrecognized." />
-                    <List text="You feel lost in the branding process." />
+                  <div className="mt-8 w-full px-3 sm:mt-0 sm:w-1/2 lg:w-full xl:w-1/2">
+                    <List text="Wasted marketing dollars and lost revenue." />
+                    <List text="Your competition gets the contract." />
+                    <List text="Time wasted because you feel lost in the branding process." />
+                    {/* <List text="Frustration grows with each missed opportunity." /> */}
+                    {/* <List text="Potential customers remain uninterested." /> */}
+                    {/* <List text="Ideas crucial for growth are overlooked." /> */}
+                    {/* <List text="Missed growth opportunities." /> */}
+                    {/* <List text="Value of your offerings goes unrecognized." /> */}
                   </div>
+                  <Link
+                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    className="mx-auto mt-12 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  >
+                    Schedule Your Free Call
+                  </Link>
                 </div>
               </div>
             </div>
